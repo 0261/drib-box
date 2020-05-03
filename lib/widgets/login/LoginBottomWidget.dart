@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeBottomWidget extends StatelessWidget {
-  const HomeBottomWidget({
+class LoginBottomWidget extends StatelessWidget {
+  const LoginBottomWidget({
     Key key,
   }) : super(key: key);
 
@@ -28,7 +28,7 @@ class HomeBottomWidget extends StatelessWidget {
                 FlatButton(
                   colorBrightness: Brightness.dark,
                   onPressed: () {},
-                  child: Image.asset('assets/icons/Instagram.png'),
+                  child: Image.asset('assets/icons/instagram.png'),
                 ),
                 FlatButton(
                   colorBrightness: Brightness.dark,

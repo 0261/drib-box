@@ -1,4 +1,5 @@
 import 'package:drib_box/components/LoginButton.dart';
+import 'package:drib_box/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
 class LoginButtonWidget extends StatelessWidget {
@@ -23,6 +24,7 @@ class LoginButtonWidget extends StatelessWidget {
             title: '스마트 로그인',
             assets: 'assets/icons/fingerprint.svg',
             fontColor: Color(0xFF567DF4),
+            press: () {},
           ),
           LoginButton(
             size: size,
@@ -31,6 +33,16 @@ class LoginButtonWidget extends StatelessWidget {
             title: '로그인',
             assets: 'assets/icons/arrow.svg',
             fontColor: Color(0xFFFFFFFF),
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomeScreen();
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeTextWidget extends StatelessWidget {
-  const HomeTextWidget({
+class LoginTextWidget extends StatelessWidget {
+  const LoginTextWidget({
     Key key,
   }) : super(key: key);
 
