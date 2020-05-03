@@ -1,7 +1,4 @@
-import 'package:drib_box/widgets/home/HomeBottomWidget.dart';
-import 'package:drib_box/widgets/home/HomeHeaderWidget.dart';
-import 'package:drib_box/widgets/home/HomeTextWidget.dart';
-import 'package:drib_box/widgets/home/LoginButtionWidget.dart';
+import 'package:drib_box/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,24 +13,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       home: LoginScreen(),
-    );
-  }
-}
-
-class LoginScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          HomeHeaderWidget(size: size),
-          HomeTextWidget(),
-          LoginButtonWidget(size: size),
-          HomeBottomWidget()
-        ],
-      ),
     );
   }
 }
