@@ -7,6 +7,7 @@ class LoginButton extends StatelessWidget {
   final MainAxisAlignment maa;
   final Color fontColor;
   final Color buttonBgColor;
+  final Function press;
   const LoginButton({
     Key key,
     @required this.size,
@@ -15,6 +16,7 @@ class LoginButton extends StatelessWidget {
     this.maa,
     this.fontColor,
     this.buttonBgColor,
+    this.press,
   }) : super(key: key);
 
   final Size size;
@@ -26,8 +28,7 @@ class LoginButton extends StatelessWidget {
       color: buttonBgColor,
       child: OutlineButton(
         padding: const EdgeInsets.all(15),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        onPressed: () {},
+        onPressed: press,
         child: Row(
           mainAxisAlignment: maa,
           children: <Widget>[
@@ -37,8 +38,8 @@ class LoginButton extends StatelessWidget {
             ),
             SvgPicture.asset(
               assets,
-              width: 20,
-              height: 20,
+              width: 15,
+              height: 15,
             ),
           ],
         ),
