@@ -19,15 +19,10 @@ class HomeHeaderWidget extends StatelessWidget {
             },
             child: Icon(CupertinoIcons.back),
           ),
-          Text(
-            '내 프로필',
-            style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                color: Color(0xFF22215B)),
-          ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Scaffold.of(context).openDrawer();
+            },
             child: Icon(CupertinoIcons.ellipsis),
           ),
         ],
